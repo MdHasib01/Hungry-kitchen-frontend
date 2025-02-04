@@ -16,7 +16,7 @@ export default function TrafficCard() {
   }, [control]);
 
   const handleDelete = (id) => {
-    fetch(`https://aqueous-falls-64682.herokuapp.com/deleteproduct/${id}`, {
+    fetch(`http://localhost:5000/deleteproduct/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
